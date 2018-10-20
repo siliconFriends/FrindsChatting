@@ -1,41 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GE SS Two Bold.otf">
+            <string>GESSTwoBold-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Audio Recorder View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="rs4-OY-gYi">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AudioRecorderViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="ZdR-qD-A8K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WtT-WL-WLK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30K-Yg-kSz">
-                                <rect key="frame" x="164" y="369" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9C-gD-uQM"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_background" translatesAutoresizingMaskIntoConstraints="NO" id="7Ki-p2-JDh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-V0-vVf">
+                                <rect key="frame" x="100.5" y="300.5" width="174" height="106"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1sV-Mx-jNP">
+                                <rect key="frame" x="20" y="572" width="335" height="15"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAo-Xc-fIU">
+                                        <rect key="frame" x="0.0" y="6.5" width="70.5" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="M4a-ap-3bU"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سجل دخولك بواسطه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So0-kg-RZL">
+                                        <rect key="frame" x="80.5" y="0.0" width="174.5" height="15"/>
+                                        <fontDescription key="fontDescription" name="GESSTwoBold-Bold" family="GE SS Two" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sW-aA-MUP">
+                                        <rect key="frame" x="265" y="6.5" width="70" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="gz8-ni-fjk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TAo-Xc-fIU" firstAttribute="width" secondItem="1sV-Mx-jNP" secondAttribute="width" multiplier="0.21" id="ASN-Ij-Ji4"/>
+                                    <constraint firstItem="2sW-aA-MUP" firstAttribute="width" secondItem="TAo-Xc-fIU" secondAttribute="width" id="eNF-ij-w8d"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-cE-mtL">
+                                <rect key="frame" x="76" y="595" width="223" height="52"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_facebook" translatesAutoresizingMaskIntoConstraints="NO" id="Mpm-YE-3Mz">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="52"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_twiteer" translatesAutoresizingMaskIntoConstraints="NO" id="m3n-xC-a8h">
+                                        <rect key="frame" x="60" y="0.0" width="41" height="52"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_gmail" translatesAutoresizingMaskIntoConstraints="NO" id="tQw-qO-1cc">
+                                        <rect key="frame" x="121" y="0.0" width="41" height="52"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_mobile" translatesAutoresizingMaskIntoConstraints="NO" id="chX-ZX-Kgh">
+                                        <rect key="frame" x="182" y="0.0" width="41" height="52"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Ki-p2-JDh" firstAttribute="leading" secondItem="Yia-Y1-Ann" secondAttribute="leading" id="6Gb-9r-eab"/>
+                            <constraint firstItem="tsC-V0-vVf" firstAttribute="centerX" secondItem="WtT-WL-WLK" secondAttribute="centerX" id="7Kd-Lf-jgX"/>
+                            <constraint firstItem="Yia-Y1-Ann" firstAttribute="trailing" secondItem="7Ki-p2-JDh" secondAttribute="trailing" id="A90-WG-v4h"/>
+                            <constraint firstItem="Yia-Y1-Ann" firstAttribute="bottom" secondItem="Syc-cE-mtL" secondAttribute="bottom" constant="20" id="CK8-SF-Qwl"/>
+                            <constraint firstItem="7Ki-p2-JDh" firstAttribute="top" secondItem="Yia-Y1-Ann" secondAttribute="top" id="IuI-o7-WgG"/>
+                            <constraint firstItem="Syc-cE-mtL" firstAttribute="top" secondItem="1sV-Mx-jNP" secondAttribute="bottom" constant="8" id="LlR-wJ-bUT"/>
+                            <constraint firstItem="tsC-V0-vVf" firstAttribute="centerY" secondItem="WtT-WL-WLK" secondAttribute="centerY" constant="20" id="Q9H-OA-5fI"/>
+                            <constraint firstItem="1sV-Mx-jNP" firstAttribute="leading" secondItem="WtT-WL-WLK" secondAttribute="leading" constant="20" id="b23-YI-BQd"/>
+                            <constraint firstItem="Yia-Y1-Ann" firstAttribute="bottom" secondItem="1sV-Mx-jNP" secondAttribute="bottom" constant="80" id="db5-Dc-y73"/>
+                            <constraint firstItem="Syc-cE-mtL" firstAttribute="centerX" secondItem="WtT-WL-WLK" secondAttribute="centerX" id="g5r-CY-hJs"/>
+                            <constraint firstAttribute="trailing" secondItem="1sV-Mx-jNP" secondAttribute="trailing" constant="20" id="jkM-eD-zub"/>
+                            <constraint firstItem="Yia-Y1-Ann" firstAttribute="bottom" secondItem="7Ki-p2-JDh" secondAttribute="bottom" id="s3q-hq-ZZp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yia-Y1-Ann"/>
                     </view>
-                    <connections>
-                        <outlet property="recordAction" destination="30K-Yg-kSz" id="oiA-Bc-v7x"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeB-4j-yyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="register_background" width="360" height="653"/>
+        <image name="register_facebook" width="40" height="40"/>
+        <image name="register_gmail" width="41" height="41"/>
+        <image name="register_logo" width="174" height="106"/>
+        <image name="register_mobile" width="41" height="41"/>
+        <image name="register_twiteer" width="41" height="41"/>
+    </resources>
 </document>

@@ -16,6 +16,8 @@
 		BE65F316217609CC0011178C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE65F315217609CC0011178C /* Assets.xcassets */; };
 		BE65F319217609CC0011178C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE65F317217609CC0011178C /* LaunchScreen.storyboard */; };
 		BE65F33E21760A800011178C /* AudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F33D21760A800011178C /* AudioRecorderViewController.swift */; };
+		BED2DCBB217BB70F00C510DD /* GE SS Two Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */; };
+		BED2DCBF217BB8CC00C510DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BED2DCC1217BB8CC00C510DD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		BE65F31F217609CC0011178C /* FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65F32A217609CC0011178C /* FriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65F33D21760A800011178C /* AudioRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderViewController.swift; sourceTree = "<group>"; };
+		BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GE SS Two Bold.otf"; sourceTree = "<group>"; };
+		BED2DCC0217BB8CC00C510DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BED2DCC2217BBA0600C510DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		BED2DCC4217BBA0600C510DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C061FE8EF1FD684C4FADD5ED /* Pods_FriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0968F5DD077F3269FD3E652 /* Pods-Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Friends/Pods-Friends.debug.xcconfig"; sourceTree = "<group>"; };
 		DAF701A539B6D55BEF436E72 /* Pods_FriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +124,7 @@
 		BE65F30D217609C90011178C /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				BED2DCBC217BB88700C510DD /* utils */,
 				BE65F33C21760A6A0011178C /* Recorder */,
 				BE65F30E217609C90011178C /* AppDelegate.swift */,
 				BE65F312217609C90011178C /* Main.storyboard */,
@@ -135,6 +142,23 @@
 				BE65F33D21760A800011178C /* AudioRecorderViewController.swift */,
 			);
 			path = Recorder;
+			sourceTree = "<group>";
+		};
+		BED2DCB9217BB6EF00C510DD /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		BED2DCBC217BB88700C510DD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DCB9217BB6EF00C510DD /* resources */,
+				BED2DCC1217BB8CC00C510DD /* Localizable.strings */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		D32ECBC192C785BD89F41DF9 /* Pods */ = {
@@ -239,6 +263,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = BE65F302217609C90011178C;
 			productRefGroup = BE65F30C217609C90011178C /* Products */;
@@ -257,8 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED2DCBF217BB8CC00C510DD /* Localizable.strings in Resources */,
 				BE65F319217609CC0011178C /* LaunchScreen.storyboard in Resources */,
 				BE65F316217609CC0011178C /* Assets.xcassets in Resources */,
+				BED2DCBB217BB70F00C510DD /* GE SS Two Bold.otf in Resources */,
 				BE65F314217609C90011178C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +408,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE65F313217609C90011178C /* Base */,
+				BED2DCC2217BBA0600C510DD /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -393,6 +421,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		BED2DCC1217BB8CC00C510DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED2DCC0217BB8CC00C510DD /* en */,
+				BED2DCC4217BBA0600C510DD /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -400,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -460,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
