@@ -1,3 +1,58 @@
-PODFILE CHECKSUM: 0bfb8096b667b6dc1696587c6fbe06abdf655f96
+PODS:
+  - Alamofire (4.7.3)
+  - BEMCheckBox (1.4.1)
+  - IQKeyboardManagerSwift (6.2.0)
+  - KeychainAccess (3.1.2)
+  - PickerView (0.3.4)
+  - PKHUD (5.2.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SwiftGifOrigin (1.6.1)
+  - SwiftyJSON (4.2.0)
+  - UIColor_Hex_Swift (4.2.0)
+  - XLPagerTabStrip (8.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - BEMCheckBox
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - PickerView
+  - PKHUD
+  - SDWebImage (~> 4.0)
+  - SwiftGifOrigin
+  - SwiftyJSON
+  - UIColor_Hex_Swift
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BEMCheckBox
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - PickerView
+    - PKHUD
+    - SDWebImage
+    - SwiftGifOrigin
+    - SwiftyJSON
+    - UIColor_Hex_Swift
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  PickerView: 7edcbbd008682d574eb42916d74a18ebd8dba109
+  PKHUD: dd5357ac65f26115c35c4a68e9b328053326c5fe
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
+  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
+
+PODFILE CHECKSUM: ab2052cc008b2c0ab934cbb33a1d046a43430316
 
 COCOAPODS: 1.5.3

@@ -76,6 +76,12 @@ class ViewController: UIViewController, AVAudioRecorderDelegate  {
             finishRecording(success: true)
         }
     }
+    @IBAction func en(_ sender: Any) {
+        LanguageHandler.sharedInstance.setDirection(direction: .LTR, lang: .ENGLISH)
+    }
     
+    @IBAction func ar(_ sender: Any) {
+        LanguageHandler.sharedInstance.setDirection(direction: .RTL, lang: .ARABIC)
+    }
 }
 

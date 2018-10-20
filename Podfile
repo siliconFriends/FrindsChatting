@@ -4,17 +4,17 @@
 target 'Friends' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for Friends
-
-  target 'FriendsTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'FriendsUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'IQKeyboardManagerSwift'
+  pod 'PKHUD'
+  #pod 'Kingfisher', '~> 4.0'
+  pod 'KeychainAccess'
+  pod 'UIColor_Hex_Swift'
+  # pod 'Cosmos'
+  pod 'SwiftGifOrigin'
+  pod 'PickerView'
+  pod 'XLPagerTabStrip'
+  pod 'BEMCheckBox'
+  pod 'SDWebImage', '~> 4.0'
 end

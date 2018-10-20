@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		80C150CA801650810A795F0B /* Pods_Friends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD5D1C2647CDB603FDFB2E0 /* Pods_Friends.framework */; };
-		85B41A7F0EE6A259251777EA /* Pods_FriendsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C061FE8EF1FD684C4FADD5ED /* Pods_FriendsTests.framework */; };
-		8F7E59EEAA920A885977821A /* Pods_FriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF701A539B6D55BEF436E72 /* Pods_FriendsUITests.framework */; };
 		BE65F30F217609C90011178C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F30E217609C90011178C /* AppDelegate.swift */; };
 		BE65F311217609C90011178C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F310217609C90011178C /* ViewController.swift */; };
 		BE65F314217609C90011178C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE65F312217609C90011178C /* Main.storyboard */; };
@@ -18,24 +16,26 @@
 		BE65F33E21760A800011178C /* AudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F33D21760A800011178C /* AudioRecorderViewController.swift */; };
 		BED2DCBB217BB70F00C510DD /* GE SS Two Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */; };
 		BED2DCBF217BB8CC00C510DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BED2DCC1217BB8CC00C510DD /* Localizable.strings */; };
+		BED2DCCB217BBD0C00C510DD /* LanguageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DCCA217BBD0C00C510DD /* LanguageHandler.swift */; };
+		BED2DCCE217BC22800C510DD /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DCCD217BC22800C510DD /* Constans.swift */; };
+		BED2DF11217BC5BF00C510DD /* ApiLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF0D217BC5BE00C510DD /* ApiLinks.swift */; };
+		BED2DF12217BC5BF00C510DD /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF0E217BC5BE00C510DD /* RequestBuilder.swift */; };
+		BED2DF13217BC5BF00C510DD /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF0F217BC5BE00C510DD /* Reach.swift */; };
+		BED2DF14217BC5BF00C510DD /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF10217BC5BF00C510DD /* ApiHelper.swift */; };
+		BED2DF1F217BC5DC00C510DD /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF17217BC5DA00C510DD /* Validator.swift */; };
+		BED2DF20217BC5DC00C510DD /* DilogeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF18217BC5DA00C510DD /* DilogeCreator.swift */; };
+		BED2DF21217BC5DC00C510DD /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF19217BC5DB00C510DD /* AppUtils.swift */; };
+		BED2DF22217BC5DC00C510DD /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF1A217BC5DB00C510DD /* MainTableViewController.swift */; };
+		BED2DF23217BC5DC00C510DD /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF1B217BC5DB00C510DD /* ViewUtils.swift */; };
+		BED2DF24217BC5DC00C510DD /* ViewControllersUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF1C217BC5DB00C510DD /* ViewControllersUtils.swift */; };
+		BED2DF25217BC5DC00C510DD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF1D217BC5DC00C510DD /* BaseViewController.swift */; };
+		BED2DF27217BC5E500C510DD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF26217BC5E100C510DD /* CardView.swift */; };
+		BED2DF32217BD7AA00C510DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF31217BD7AA00C510DD /* MainViewController.swift */; };
+		BED2DF34217BD8A300C510DD /* FriendsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF33217BD8A300C510DD /* FriendsLabel.swift */; };
+		BED2DF37217BE0E900C510DD /* FriendsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF36217BE0E900C510DD /* FriendsButton.swift */; };
+		BED2DF39217BE22800C510DD /* FriendsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF38217BE22800C510DD /* FriendsTextField.swift */; };
+		BED2DF3C217BE67E00C510DD /* RegisterationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DF3B217BE67E00C510DD /* RegisterationViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BE65F320217609CC0011178C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE65F303217609C90011178C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE65F30A217609C90011178C;
-			remoteInfo = Friends;
-		};
-		BE65F32B217609CC0011178C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE65F303217609C90011178C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE65F30A217609C90011178C;
-			remoteInfo = Friends;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B1E4C992A6D59B2ED7A0B75 /* Pods-FriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendsTests/Pods-FriendsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,17 +45,35 @@
 		BE65F30B217609C90011178C /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65F30E217609C90011178C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE65F310217609C90011178C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE65F313217609C90011178C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE65F315217609CC0011178C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE65F318217609CC0011178C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE65F31A217609CC0011178C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE65F31F217609CC0011178C /* FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE65F32A217609CC0011178C /* FriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65F33D21760A800011178C /* AudioRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderViewController.swift; sourceTree = "<group>"; };
 		BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GE SS Two Bold.otf"; sourceTree = "<group>"; };
-		BED2DCC0217BB8CC00C510DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		BED2DCC2217BBA0600C510DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
-		BED2DCC4217BBA0600C510DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BED2DCC9217BBCDF00C510DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BED2DCCA217BBD0C00C510DD /* LanguageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageHandler.swift; sourceTree = "<group>"; };
+		BED2DCCC217BBF1B00C510DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BED2DCCD217BC22800C510DD /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		BED2DF0D217BC5BE00C510DD /* ApiLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiLinks.swift; sourceTree = "<group>"; };
+		BED2DF0E217BC5BE00C510DD /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		BED2DF0F217BC5BE00C510DD /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		BED2DF10217BC5BF00C510DD /* ApiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		BED2DF17217BC5DA00C510DD /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		BED2DF18217BC5DA00C510DD /* DilogeCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DilogeCreator.swift; sourceTree = "<group>"; };
+		BED2DF19217BC5DB00C510DD /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		BED2DF1A217BC5DB00C510DD /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		BED2DF1B217BC5DB00C510DD /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		BED2DF1C217BC5DB00C510DD /* ViewControllersUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllersUtils.swift; sourceTree = "<group>"; };
+		BED2DF1D217BC5DC00C510DD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BED2DF26217BC5E100C510DD /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BED2DF2E217BD4A900C510DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BED2DF2F217BD55A00C510DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BED2DF31217BD7AA00C510DD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BED2DF33217BD8A300C510DD /* FriendsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsLabel.swift; sourceTree = "<group>"; };
+		BED2DF35217BDC3500C510DD /* GE SS Two Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GE SS Two Medium.otf"; sourceTree = "<group>"; };
+		BED2DF36217BE0E900C510DD /* FriendsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsButton.swift; sourceTree = "<group>"; };
+		BED2DF38217BE22800C510DD /* FriendsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTextField.swift; sourceTree = "<group>"; };
+		BED2DF3B217BE67E00C510DD /* RegisterationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewController.swift; sourceTree = "<group>"; };
 		C061FE8EF1FD684C4FADD5ED /* Pods_FriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0968F5DD077F3269FD3E652 /* Pods-Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Friends/Pods-Friends.debug.xcconfig"; sourceTree = "<group>"; };
 		DAF701A539B6D55BEF436E72 /* Pods_FriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,22 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C150CA801650810A795F0B /* Pods_Friends.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE65F31C217609CC0011178C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85B41A7F0EE6A259251777EA /* Pods_FriendsTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE65F327217609CC0011178C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F7E59EEAA920A885977821A /* Pods_FriendsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				BE65F30B217609C90011178C /* Friends.app */,
-				BE65F31F217609CC0011178C /* FriendsTests.xctest */,
-				BE65F32A217609CC0011178C /* FriendsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,8 +124,9 @@
 		BE65F30D217609C90011178C /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				BED2DCBC217BB88700C510DD /* utils */,
+				BED2DCCF217BC4A300C510DD /* common */,
 				BE65F33C21760A6A0011178C /* Recorder */,
+				BED2DF30217BD79400C510DD /* presentation */,
 				BE65F30E217609C90011178C /* AppDelegate.swift */,
 				BE65F312217609C90011178C /* Main.storyboard */,
 				BE65F315217609CC0011178C /* Assets.xcassets */,
@@ -148,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */,
+				BED2DF35217BDC3500C510DD /* GE SS Two Medium.otf */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -157,8 +159,66 @@
 			children = (
 				BED2DCB9217BB6EF00C510DD /* resources */,
 				BED2DCC1217BB8CC00C510DD /* Localizable.strings */,
+				BED2DCCA217BBD0C00C510DD /* LanguageHandler.swift */,
+				BED2DCCD217BC22800C510DD /* Constans.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		BED2DCCF217BC4A300C510DD /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DCBC217BB88700C510DD /* utils */,
+				BED2DF15217BC5CA00C510DD /* ui */,
+				BED2DF0C217BC5AE00C510DD /* Network */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BED2DF0C217BC5AE00C510DD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DF10217BC5BF00C510DD /* ApiHelper.swift */,
+				BED2DF0D217BC5BE00C510DD /* ApiLinks.swift */,
+				BED2DF0F217BC5BE00C510DD /* Reach.swift */,
+				BED2DF0E217BC5BE00C510DD /* RequestBuilder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BED2DF15217BC5CA00C510DD /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DF19217BC5DB00C510DD /* AppUtils.swift */,
+				BED2DF18217BC5DA00C510DD /* DilogeCreator.swift */,
+				BED2DF1A217BC5DB00C510DD /* MainTableViewController.swift */,
+				BED2DF1D217BC5DC00C510DD /* BaseViewController.swift */,
+				BED2DF26217BC5E100C510DD /* CardView.swift */,
+				BED2DF17217BC5DA00C510DD /* Validator.swift */,
+				BED2DF1C217BC5DB00C510DD /* ViewControllersUtils.swift */,
+				BED2DF1B217BC5DB00C510DD /* ViewUtils.swift */,
+				BED2DF33217BD8A300C510DD /* FriendsLabel.swift */,
+				BED2DF36217BE0E900C510DD /* FriendsButton.swift */,
+				BED2DF38217BE22800C510DD /* FriendsTextField.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		BED2DF30217BD79400C510DD /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DF3A217BE65B00C510DD /* main */,
+				BED2DF31217BD7AA00C510DD /* MainViewController.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		BED2DF3A217BE65B00C510DD /* main */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DF3B217BE67E00C510DD /* RegisterationViewController.swift */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		D32ECBC192C785BD89F41DF9 /* Pods */ = {
@@ -185,6 +245,7 @@
 				BE65F307217609C90011178C /* Sources */,
 				BE65F308217609C90011178C /* Frameworks */,
 				BE65F309217609C90011178C /* Resources */,
+				701F1837D59DE03507CD2456 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,44 +255,6 @@
 			productName = Friends;
 			productReference = BE65F30B217609C90011178C /* Friends.app */;
 			productType = "com.apple.product-type.application";
-		};
-		BE65F31E217609CC0011178C /* FriendsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE65F336217609CC0011178C /* Build configuration list for PBXNativeTarget "FriendsTests" */;
-			buildPhases = (
-				9D766AA3736793EABBD30FBF /* [CP] Check Pods Manifest.lock */,
-				BE65F31B217609CC0011178C /* Sources */,
-				BE65F31C217609CC0011178C /* Frameworks */,
-				BE65F31D217609CC0011178C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE65F321217609CC0011178C /* PBXTargetDependency */,
-			);
-			name = FriendsTests;
-			productName = FriendsTests;
-			productReference = BE65F31F217609CC0011178C /* FriendsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BE65F329217609CC0011178C /* FriendsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE65F339217609CC0011178C /* Build configuration list for PBXNativeTarget "FriendsUITests" */;
-			buildPhases = (
-				42A5F7A3F9DEE093722C2A28 /* [CP] Check Pods Manifest.lock */,
-				BE65F326217609CC0011178C /* Sources */,
-				BE65F327217609CC0011178C /* Frameworks */,
-				BE65F328217609CC0011178C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE65F32C217609CC0011178C /* PBXTargetDependency */,
-			);
-			name = FriendsUITests;
-			productName = FriendsUITests;
-			productReference = BE65F32A217609CC0011178C /* FriendsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -246,24 +269,16 @@
 					BE65F30A217609C90011178C = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					BE65F31E217609CC0011178C = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = BE65F30A217609C90011178C;
-					};
-					BE65F329217609CC0011178C = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = BE65F30A217609C90011178C;
-					};
 				};
 			};
 			buildConfigurationList = BE65F306217609C90011178C /* Build configuration list for PBXProject "Friends" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = ar;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				ar,
+				en,
 			);
 			mainGroup = BE65F302217609C90011178C;
 			productRefGroup = BE65F30C217609C90011178C /* Products */;
@@ -271,8 +286,6 @@
 			projectRoot = "";
 			targets = (
 				BE65F30A217609C90011178C /* Friends */,
-				BE65F31E217609CC0011178C /* FriendsTests */,
-				BE65F329217609CC0011178C /* FriendsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,41 +303,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE65F31D217609CC0011178C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE65F328217609CC0011178C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42A5F7A3F9DEE093722C2A28 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FriendsUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		52FB203263D7B59726EC39BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,22 +324,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D766AA3736793EABBD30FBF /* [CP] Check Pods Manifest.lock */ = {
+		701F1837D59DE03507CD2456 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Friends/Pods-Friends-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PickerView/PickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FriendsTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Friends/Pods-Friends-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -368,47 +369,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED2DF12217BC5BF00C510DD /* RequestBuilder.swift in Sources */,
+				BED2DF13217BC5BF00C510DD /* Reach.swift in Sources */,
 				BE65F311217609C90011178C /* ViewController.swift in Sources */,
+				BED2DF21217BC5DC00C510DD /* AppUtils.swift in Sources */,
+				BED2DF39217BE22800C510DD /* FriendsTextField.swift in Sources */,
+				BED2DF14217BC5BF00C510DD /* ApiHelper.swift in Sources */,
+				BED2DF37217BE0E900C510DD /* FriendsButton.swift in Sources */,
 				BE65F33E21760A800011178C /* AudioRecorderViewController.swift in Sources */,
+				BED2DF22217BC5DC00C510DD /* MainTableViewController.swift in Sources */,
+				BED2DF25217BC5DC00C510DD /* BaseViewController.swift in Sources */,
+				BED2DF1F217BC5DC00C510DD /* Validator.swift in Sources */,
+				BED2DF24217BC5DC00C510DD /* ViewControllersUtils.swift in Sources */,
+				BED2DF27217BC5E500C510DD /* CardView.swift in Sources */,
+				BED2DF3C217BE67E00C510DD /* RegisterationViewController.swift in Sources */,
+				BED2DF34217BD8A300C510DD /* FriendsLabel.swift in Sources */,
+				BED2DF20217BC5DC00C510DD /* DilogeCreator.swift in Sources */,
+				BED2DCCE217BC22800C510DD /* Constans.swift in Sources */,
+				BED2DCCB217BBD0C00C510DD /* LanguageHandler.swift in Sources */,
+				BED2DF23217BC5DC00C510DD /* ViewUtils.swift in Sources */,
+				BED2DF32217BD7AA00C510DD /* MainViewController.swift in Sources */,
+				BED2DF11217BC5BF00C510DD /* ApiLinks.swift in Sources */,
 				BE65F30F217609C90011178C /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE65F31B217609CC0011178C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE65F326217609CC0011178C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BE65F321217609CC0011178C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE65F30A217609C90011178C /* Friends */;
-			targetProxy = BE65F320217609CC0011178C /* PBXContainerItemProxy */;
-		};
-		BE65F32C217609CC0011178C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE65F30A217609C90011178C /* Friends */;
-			targetProxy = BE65F32B217609CC0011178C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		BE65F312217609C90011178C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BE65F313217609C90011178C /* Base */,
-				BED2DCC2217BBA0600C510DD /* ar */,
+				BED2DCC9217BBCDF00C510DD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -417,6 +409,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE65F318217609CC0011178C /* Base */,
+				BED2DF2E217BD4A900C510DD /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -424,8 +417,8 @@
 		BED2DCC1217BB8CC00C510DD /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BED2DCC0217BB8CC00C510DD /* en */,
-				BED2DCC4217BBA0600C510DD /* ar */,
+				BED2DCCC217BBF1B00C510DD /* Base */,
+				BED2DF2F217BD55A00C510DD /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -589,92 +582,6 @@
 			};
 			name = Release;
 		};
-		BE65F337217609CC0011178C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB6D0E62CDFB1E7113FA9624 /* Pods-FriendsTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 959HZ67CJ8;
-				INFOPLIST_FILE = FriendsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Friends.FriendsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friends.app/Friends";
-			};
-			name = Debug;
-		};
-		BE65F338217609CC0011178C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B1E4C992A6D59B2ED7A0B75 /* Pods-FriendsTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 959HZ67CJ8;
-				INFOPLIST_FILE = FriendsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Friends.FriendsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friends.app/Friends";
-			};
-			name = Release;
-		};
-		BE65F33A217609CC0011178C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB0C3ED48A141DA50828B160 /* Pods-FriendsUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 959HZ67CJ8;
-				INFOPLIST_FILE = FriendsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Friends.FriendsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Friends;
-			};
-			name = Debug;
-		};
-		BE65F33B217609CC0011178C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F227B5BE35CA739ED2301940 /* Pods-FriendsUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 959HZ67CJ8;
-				INFOPLIST_FILE = FriendsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Friends.FriendsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Friends;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -692,24 +599,6 @@
 			buildConfigurations = (
 				BE65F334217609CC0011178C /* Debug */,
 				BE65F335217609CC0011178C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE65F336217609CC0011178C /* Build configuration list for PBXNativeTarget "FriendsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE65F337217609CC0011178C /* Debug */,
-				BE65F338217609CC0011178C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE65F339217609CC0011178C /* Build configuration list for PBXNativeTarget "FriendsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE65F33A217609CC0011178C /* Debug */,
-				BE65F33B217609CC0011178C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
