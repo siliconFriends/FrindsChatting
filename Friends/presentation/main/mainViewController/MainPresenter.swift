@@ -10,24 +10,38 @@ import Foundation
 import  ObjectMapper
 import FBSDKLoginKit
 import FBSDKCoreKit
+
 class MainPresenter:BasePresenter {
+    fileprivate let registerService:RegisterServices
+    weak fileprivate var socialView : mainView?
+    
+    init(registerSerives:RegisterServices) {
+        self.registerService = registerSerives
+    }
+    func attachView(_ socialView:mainView) {
+        self.socialView = socialView
+    }
+    func detachView() {
+        self.socialView = nil
+    }
+    
     // Mark : FaceBook Login
     func FaceBookAuthLogin () {
-//        let loginManager = FBSDKLoginManager()
-//        loginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self.delegate) { (result, error) in
-//            
-//            if (error == nil){
-//                let fbloginresult : FBSDKLoginManagerLoginResult = result!
-//                // if user cancel the login
-//                if (result?.isCancelled)!{
-//                    return
-//                }
-//                if(fbloginresult.grantedPermissions.contains("email"))
-//                {
-//                    self.getFBUserData()
-//                }
-//            }
-//        }
+        let loginManager = FBSDKLoginManager()
+        loginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self.socialView as? UIViewController) { (result, error) in
+
+            if (error == nil){
+                let fbloginresult : FBSDKLoginManagerLoginResult = result!
+                // if user cancel the login
+                if (result?.isCancelled)!{
+                    return
+                }
+                if(fbloginresult.grantedPermissions.contains("email"))
+                {
+                    self.getFBUserData()
+                }
+            }
+        }
     }
     
     func getFBUserData(){

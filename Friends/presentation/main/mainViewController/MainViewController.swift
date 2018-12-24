@@ -14,6 +14,8 @@ class MainViewController: BaseViewController {
 
     @IBOutlet weak var facebookLoginButton: UIButton!
     @IBOutlet weak var label: UILabel!
+    var presenter = MainPresenter(registerSerives: RegisterServices())
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -29,8 +31,9 @@ class MainViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
     @IBAction func facebookLogin(_ sender: Any) {
-        
+        presenter.FaceBookAuthLogin()
      
     }
     
 }
+

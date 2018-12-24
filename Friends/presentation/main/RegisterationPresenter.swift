@@ -69,6 +69,7 @@ class RegisterationPresenter :BasePresenter {
         registerView?.startLoading()
         self.validateVerficationCode(code: code, phone: mobileNumber) { (valid) in
             self.registerService.register(mobileNumber: mobileNumber, country: country, userName: userName, birthDate: birthDate, gender: gender, password: password, completion: { (user) in
+                self.registerView?.finishLoading()
                 self.registerView?.userRegisterd(user: user)
             })
         }
