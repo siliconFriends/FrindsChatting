@@ -10,14 +10,13 @@ import Foundation
 import Alamofire
 
 class RequestBuilder {
-    
-   static  func request(url :String,parmters : [String:Any]?,completion :@escaping ( _ response :[String: Any],_ connectionError :String)->Void){
-        print( "URL: \(url) \n params: \( parmters!)")
+   static var sharedInstance = RequestBuilder()
+    static  func request(method :HTTPMethod,url :String,parmters : [String:Any]?,completion :@escaping ( _ response :[String: Any],_ connectionError :String)->Void){
         if !isIntnetAvailable() {
-            completion([String: Any](),"تحقق من اتصالاك بالانترنت")
+            completion([String: Any](),"checkInternet".localize)
             return
         }
-        Alamofire.request(url, method: .post, parameters: parmters!, encoding: JSONEncoding.default, headers: nil).responseJSON{ response in
+        Alamofire.request(url, method: method, parameters: parmters, encoding: JSONEncoding.default, headers: nil).responseJSON{ response in
             
             switch response.result{
             case .success( _):
@@ -26,14 +25,14 @@ class RequestBuilder {
                 if let dictionary = jsonResponse as? [String: Any] {
                     completion(dictionary,"")
                 }else {
-                    completion([String: Any](),"خطأ غير معروف")
+                    completion([String: Any](),"Ops!".localize)
                 }
                 
                 break
                 
             case .failure(let error):
                 print(error.localizedDescription)
-                completion([String: Any](),"خطأ غير معروف")
+                completion([String: Any](),"Ops!".localize)
                 break
                 
             }
@@ -41,36 +40,6 @@ class RequestBuilder {
         }
     }
  
-    static  func getReequest(url :String,parmters : [String:Any]?,completion :@escaping ( _ response :[String: Any],_ connectionError :String)->Void){
-        print(url)
-        if !isIntnetAvailable() {
-            completion([String: Any](),"تحقق من اتصالاك بالانترنت")
-            return
-        }
-        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON{ response in
-            
-            switch response.result{
-            case .success( _):
-                let jsonResponse = response.result.value!
-                print(jsonResponse)
-                if let dictionary = jsonResponse as? [String: Any] {
-                    completion(dictionary,"")
-                }else {
-                    completion([String: Any](),"خطأ غير معروف")
-                }
-                
-                break
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-                completion([String: Any](),"خطأ غير معروف")
-                break
-                
-            }
-            
-        }
-    }
-  
     
     static func isIntnetAvailable() ->Bool {
         var reachability :Reachability?

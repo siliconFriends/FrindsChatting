@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wKV-lZ-xee">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1GD-73-NfC">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,12 +19,15 @@
         <scene sceneID="BQM-Ro-L1u">
             <objects>
                 <navigationController id="1GD-73-NfC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r8U-pS-pJq">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="back_icon" id="r8U-pS-pJq">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.019607843140000001" green="0.0" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="uRC-xw-Vra" kind="relationship" relationship="rootViewController" id="qKq-Ys-EEs"/>
+                        <segue destination="ZdR-qD-A8K" kind="relationship" relationship="rootViewController" id="URX-eC-ZN3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBf-qB-7P1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,7 +39,7 @@
             <objects>
                 <viewController id="uRC-xw-Vra" customClass="ViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6sT-Dl-xjP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INp-6d-3fj">
@@ -64,41 +67,41 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="nP3-Ap-43w"/>
                     </view>
                     <navigationItem key="navigationItem" id="3zv-ph-NDa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QP0-DI-iop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-447" y="121"/>
+            <point key="canvasLocation" x="-633" y="71"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="rs4-OY-gYi">
             <objects>
                 <viewController storyboardIdentifier="Main" id="ZdR-qD-A8K" customClass="MainViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WtT-WL-WLK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_background" translatesAutoresizingMaskIntoConstraints="NO" id="7Ki-p2-JDh">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-V0-vVf">
-                                <rect key="frame" x="100.5" y="300.5" width="174" height="106"/>
+                                <rect key="frame" x="120" y="335" width="174" height="106"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1sV-Mx-jNP">
-                                <rect key="frame" x="20" y="571" width="335" height="16"/>
+                                <rect key="frame" x="20" y="640" width="374" height="16"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAo-Xc-fIU">
-                                        <rect key="frame" x="0.0" y="7" width="70.5" height="2"/>
+                                        <rect key="frame" x="0.0" y="7" width="78.666666666666671" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="M4a-ap-3bU"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سجل دخولك بواسطه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So0-kg-RZL" customClass="FriendsLabel" customModule="Friends" customModuleProvider="target">
-                                        <rect key="frame" x="75.5" y="0.0" width="184.5" height="16"/>
+                                        <rect key="frame" x="83.666666666666671" y="0.0" width="206.66666666666663" height="16"/>
                                         <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -107,7 +110,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sW-aA-MUP">
-                                        <rect key="frame" x="265" y="7" width="70" height="2"/>
+                                        <rect key="frame" x="295.33333333333331" y="7" width="78.666666666666686" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="gz8-ni-fjk"/>
@@ -120,14 +123,17 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-cE-mtL">
-                                <rect key="frame" x="61" y="602" width="253" height="41"/>
+                                <rect key="frame" x="80.666666666666686" y="671" width="253" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUj-kV-LgK">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="41"/>
                                         <state key="normal" image="register_facebook"/>
+                                        <connections>
+                                            <action selector="facebookLogin:" destination="ZdR-qD-A8K" eventType="touchUpInside" id="b4N-qN-jFL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-yo-Vh4">
-                                        <rect key="frame" x="70" y="0.0" width="41" height="41"/>
+                                        <rect key="frame" x="69.999999999999986" y="0.0" width="41" height="41"/>
                                         <state key="normal" image="register_twiteer"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-tY-OL1">
@@ -160,7 +166,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yia-Y1-Ann"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5vp-HB-rwI"/>
                     <connections>
+                        <outlet property="facebookLoginButton" destination="aUj-kV-LgK" id="giW-Sl-6Lm"/>
                         <outlet property="label" destination="So0-kg-RZL" id="JV3-VN-ECO"/>
                     </connections>
                 </viewController>
@@ -173,29 +181,29 @@
             <objects>
                 <viewController id="wKV-lZ-xee" customClass="RegisterationViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npV-cR-8wh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUz-zL-fIl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjO-Qj-ZgE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_background2" translatesAutoresizingMaskIntoConstraints="NO" id="FLo-Dr-wRh">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_logo" translatesAutoresizingMaskIntoConstraints="NO" id="AZl-3g-pKo">
-                                                <rect key="frame" x="100.5" y="40" width="174" height="106"/>
+                                                <rect key="frame" x="120" y="40" width="174" height="106"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1iy-hi-xDL">
-                                                <rect key="frame" x="20" y="237.5" width="335" height="248"/>
+                                                <rect key="frame" x="20" y="294" width="374" height="248"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZy-Bm-bDW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="62"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regiser_loc" translatesAutoresizingMaskIntoConstraints="NO" id="KVu-kq-bo5">
-                                                                <rect key="frame" x="285" y="11" width="40" height="40"/>
+                                                                <rect key="frame" x="324" y="11" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="40" id="1Rx-oH-kue"/>
@@ -203,14 +211,14 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cW3-Dv-QfE">
-                                                                <rect key="frame" x="0.0" y="61" width="335" height="1"/>
+                                                                <rect key="frame" x="0.0" y="61" width="374" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="P75-kc-2mg"/>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مصر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2B-kN-gAW" customClass="FriendsLabel" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="30" y="23" width="30" height="16"/>
+                                                                <rect key="frame" x="30" y="22.333333333333314" width="26.666666666666671" height="17.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -225,8 +233,8 @@
                                                                     <constraint firstAttribute="height" constant="12" id="n90-bb-6KP"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="country" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyr-Og-PPl" customClass="FriendsTextField" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="64" y="9" width="209" height="45"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="country" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyr-Og-PPl" customClass="FriendsTextField" customModule="Friends" customModuleProvider="target">
+                                                                <rect key="frame" x="66.666666666666671" y="8.6666666666666856" width="247.33333333333331" height="45"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="FaM-6b-Rp8"/>
@@ -258,10 +266,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMX-A5-vau">
-                                                        <rect key="frame" x="0.0" y="62" width="335" height="62"/>
+                                                        <rect key="frame" x="0.0" y="62" width="374" height="62"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_phone" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-Dx-90C">
-                                                                <rect key="frame" x="285" y="11" width="40" height="40"/>
+                                                                <rect key="frame" x="324" y="11" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="HCC-DV-3Gv"/>
@@ -269,7 +277,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eH3-ge-H6N" customClass="FriendsTextField" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="87" y="9" width="188" height="45"/>
+                                                                <rect key="frame" x="94.666666666666671" y="8.6666666666666856" width="219.33333333333331" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="Pzn-Pl-Q4o"/>
                                                                 </constraints>
@@ -281,14 +289,14 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTH-QS-rWB">
-                                                                <rect key="frame" x="0.0" y="61" width="335" height="1"/>
+                                                                <rect key="frame" x="0.0" y="61" width="374" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="FGO-Yh-pXX"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-dm-eLP" customClass="FriendsButton" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="10" y="16" width="67" height="30"/>
+                                                                <rect key="frame" x="10" y="16" width="74.666666666666671" height="30"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="nmk-nI-1iN"/>
@@ -322,10 +330,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhp-aw-LPT">
-                                                        <rect key="frame" x="0.0" y="124" width="335" height="62"/>
+                                                        <rect key="frame" x="0.0" y="124" width="374" height="62"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_code" translatesAutoresizingMaskIntoConstraints="NO" id="e53-3E-T5m">
-                                                                <rect key="frame" x="285" y="11" width="40" height="40"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_code" translatesAutoresizingMaskIntoConstraints="NO" id="e53-3E-T5m">
+                                                                <rect key="frame" x="324" y="11" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="ZWa-ZW-MfH"/>
@@ -333,7 +341,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UWj-5U-dEd" customClass="FriendsTextField" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="10" y="8.5" width="265" height="45"/>
+                                                                <rect key="frame" x="10" y="8.6666666666666856" width="304" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="Tub-P2-MM4"/>
                                                                 </constraints>
@@ -345,7 +353,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jah-aK-cp3">
-                                                                <rect key="frame" x="0.0" y="61" width="335" height="1"/>
+                                                                <rect key="frame" x="0.0" y="61" width="374" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="qY8-iH-Qwg"/>
@@ -366,10 +374,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ljq-wc-VM2">
-                                                        <rect key="frame" x="0.0" y="186" width="335" height="62"/>
+                                                        <rect key="frame" x="0.0" y="186" width="374" height="62"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_pass" translatesAutoresizingMaskIntoConstraints="NO" id="Rxf-ZM-log">
-                                                                <rect key="frame" x="285" y="11" width="40" height="40"/>
+                                                                <rect key="frame" x="324" y="11" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="C9L-al-nDV"/>
@@ -377,7 +385,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رمز التحقق" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljV-RU-Y4k" customClass="FriendsTextField" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="10" y="8.5" width="265" height="45"/>
+                                                                <rect key="frame" x="10" y="8.6666666666666856" width="304" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="p91-r2-94n"/>
                                                                 </constraints>
@@ -389,7 +397,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsD-PE-RPW">
-                                                                <rect key="frame" x="0.0" y="61" width="335" height="1"/>
+                                                                <rect key="frame" x="0.0" y="61" width="374" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="kAn-8H-B74"/>
@@ -412,7 +420,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyH-gb-oZD" customClass="FriendsButton" customModule="Friends" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="518" width="315" height="35"/>
+                                                <rect key="frame" x="30" y="631" width="354" height="35"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="yZc-vl-PaC"/>
@@ -486,12 +494,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_icon" width="34" height="34"/>
         <image name="regiser_loc" width="25" height="25"/>
         <image name="registerCountry" width="12" height="12"/>
         <image name="register_background" width="360" height="653"/>
         <image name="register_background2" width="360" height="653"/>
         <image name="register_code" width="25" height="25"/>
-        <image name="register_facebook" width="40" height="40"/>
+        <image name="register_facebook" width="40.666667938232422" height="40.666667938232422"/>
         <image name="register_gmail" width="41" height="41"/>
         <image name="register_logo" width="174" height="106"/>
         <image name="register_mobile" width="41" height="41"/>
@@ -499,4 +508,7 @@
         <image name="register_phone" width="17" height="17"/>
         <image name="register_twiteer" width="41" height="41"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ic8-Q6-hA1"/>
+    </inferredMetricsTieBreakers>
 </document>

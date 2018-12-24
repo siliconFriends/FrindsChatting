@@ -1,8 +1,19 @@
 PODS:
   - Alamofire (4.7.3)
   - BEMCheckBox (1.4.1)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.39.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.0):
+    - FBSDKCoreKit
   - IQKeyboardManagerSwift (6.2.0)
   - KeychainAccess (3.1.2)
+  - ObjectMapper (3.4.1)
   - PickerView (0.3.4)
   - PKHUD (5.2.0)
   - SDWebImage (4.4.2):
@@ -16,8 +27,10 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - BEMCheckBox
+  - FBSDKLoginKit
   - IQKeyboardManagerSwift
   - KeychainAccess
+  - ObjectMapper (~> 3.4)
   - PickerView
   - PKHUD
   - SDWebImage (~> 4.0)
@@ -30,8 +43,12 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - BEMCheckBox
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - IQKeyboardManagerSwift
     - KeychainAccess
+    - ObjectMapper
     - PickerView
     - PKHUD
     - SDWebImage
@@ -43,8 +60,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
+  FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
   PickerView: 7edcbbd008682d574eb42916d74a18ebd8dba109
   PKHUD: dd5357ac65f26115c35c4a68e9b328053326c5fe
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
@@ -53,6 +74,6 @@ SPEC CHECKSUMS:
   UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
   XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: ab2052cc008b2c0ab934cbb33a1d046a43430316
+PODFILE CHECKSUM: bdf172caeb96aed03679a8c50e1cca5666823d8d
 
 COCOAPODS: 1.5.3

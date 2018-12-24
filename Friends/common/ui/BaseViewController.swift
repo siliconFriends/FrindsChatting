@@ -14,7 +14,9 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
-
+        self.navigationController?.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "back_icon")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back_icon")
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
    
     override func didReceiveMemoryWarning() {
@@ -26,13 +28,37 @@ class BaseViewController: UIViewController {
     func hideProgress(){
         HUD.hide()
     }
-//    func error(errorMessage: String) {
-//        DialogeCreator.alertWithTittlMessage(title: "خطأ", message: errorMessage, viewController: self)
-//    }
-//    func success(message: String) {
-//        DialogeCreator.alertWithTittlMessage(title: "تم", message: message, viewController: self)
-//    }
+    func showError(errorMessage: String) {
+        //DialogeCreator.alertWithTittlMessage(title: "خطأ", message: errorMessage, viewController: self)
+    }
+    func showSuccess(message: String) {
+        //DialogeCreator.alertWithTittlMessage(title: "تم", message: message, viewController: self)
+    }
+    func checkEmpty(text :String?) ->Bool {
+        if text != nil {
+            return text  != ""
+        }
+        return false 
+    }
 //    func navigateTo(viewController :String){
 //        
 //    }
+}
+extension BaseViewController :mainView {
+    func startLoading() {
+        self.showProgress()
+    }
+    
+    func finishLoading() {
+        self.hideProgress()
+    }
+    
+    func error(error: String) {
+        self.showError(errorMessage: error)
+    }
+    
+    func success(message: String) {
+        self.showSuccess(message: message)
+    }
+
 }

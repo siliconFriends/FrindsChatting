@@ -123,3 +123,8 @@ public extension UIWindow {
     }
 }
 
+extension String {
+    var localize: String {
+        return LanguageHandler.sharedInstance.stringForKey(key: self)
+    }
+}

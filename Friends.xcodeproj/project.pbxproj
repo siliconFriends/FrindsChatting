@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		80C150CA801650810A795F0B /* Pods_Friends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD5D1C2647CDB603FDFB2E0 /* Pods_Friends.framework */; };
+		BE21F5A721D0B46F0070A223 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5A621D0B46F0070A223 /* MainPresenter.swift */; };
+		BE21F5A921D0B4980070A223 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5A821D0B4980070A223 /* BasePresenter.swift */; };
+		BE21F5AC21D0B9020070A223 /* RegisterationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5AB21D0B9020070A223 /* RegisterationPresenter.swift */; };
+		BE21F5AE21D0BC160070A223 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5AD21D0BC160070A223 /* Country.swift */; };
+		BE21F5B121D0BDA00070A223 /* RegisterServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5B021D0BDA00070A223 /* RegisterServices.swift */; };
+		BE21F5B321D0D0820070A223 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5B221D0D0820070A223 /* RegisterModel.swift */; };
+		BE21F5B521D0D08E0070A223 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21F5B421D0D08E0070A223 /* BaseModel.swift */; };
 		BE65F30F217609C90011178C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F30E217609C90011178C /* AppDelegate.swift */; };
 		BE65F311217609C90011178C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F310217609C90011178C /* ViewController.swift */; };
 		BE65F314217609C90011178C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE65F312217609C90011178C /* Main.storyboard */; };
@@ -42,6 +49,13 @@
 		2CD5D1C2647CDB603FDFB2E0 /* Pods_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB12E86B30158A63251CFA /* Pods-Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.release.xcconfig"; path = "Pods/Target Support Files/Pods-Friends/Pods-Friends.release.xcconfig"; sourceTree = "<group>"; };
 		AB6D0E62CDFB1E7113FA9624 /* Pods-FriendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendsTests/Pods-FriendsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE21F5A621D0B46F0070A223 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BE21F5A821D0B4980070A223 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		BE21F5AB21D0B9020070A223 /* RegisterationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationPresenter.swift; sourceTree = "<group>"; };
+		BE21F5AD21D0BC160070A223 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BE21F5B021D0BDA00070A223 /* RegisterServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServices.swift; sourceTree = "<group>"; };
+		BE21F5B221D0D0820070A223 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		BE21F5B421D0D08E0070A223 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		BE65F30B217609C90011178C /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65F30E217609C90011178C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE65F310217609C90011178C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +115,33 @@
 				DAF701A539B6D55BEF436E72 /* Pods_FriendsUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE21F5A521D0B4400070A223 /* mainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BED2DF31217BD7AA00C510DD /* MainViewController.swift */,
+				BE21F5A621D0B46F0070A223 /* MainPresenter.swift */,
+			);
+			path = mainViewController;
+			sourceTree = "<group>";
+		};
+		BE21F5AA21D0B5030070A223 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE21F5AD21D0BC160070A223 /* Country.swift */,
+				BE21F5B221D0D0820070A223 /* RegisterModel.swift */,
+				BE21F5B421D0D08E0070A223 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE21F5AF21D0BD810070A223 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE21F5B021D0BDA00070A223 /* RegisterServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BE65F302217609C90011178C = {
@@ -168,6 +209,8 @@
 		BED2DCCF217BC4A300C510DD /* common */ = {
 			isa = PBXGroup;
 			children = (
+				BE21F5AF21D0BD810070A223 /* Services */,
+				BE21F5AA21D0B5030070A223 /* Model */,
 				BED2DCBC217BB88700C510DD /* utils */,
 				BED2DF15217BC5CA00C510DD /* ui */,
 				BED2DF0C217BC5AE00C510DD /* Network */,
@@ -182,6 +225,7 @@
 				BED2DF0D217BC5BE00C510DD /* ApiLinks.swift */,
 				BED2DF0F217BC5BE00C510DD /* Reach.swift */,
 				BED2DF0E217BC5BE00C510DD /* RequestBuilder.swift */,
+				BE21F5A821D0B4980070A223 /* BasePresenter.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -208,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				BED2DF3A217BE65B00C510DD /* main */,
-				BED2DF31217BD7AA00C510DD /* MainViewController.swift */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -216,7 +259,9 @@
 		BED2DF3A217BE65B00C510DD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BE21F5A521D0B4400070A223 /* mainViewController */,
 				BED2DF3B217BE67E00C510DD /* RegisterationViewController.swift */,
+				BE21F5AB21D0B9020070A223 /* RegisterationPresenter.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -333,8 +378,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Friends/Pods-Friends-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/PickerView/PickerView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -347,8 +396,12 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PickerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -370,11 +423,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED2DF12217BC5BF00C510DD /* RequestBuilder.swift in Sources */,
+				BE21F5A921D0B4980070A223 /* BasePresenter.swift in Sources */,
 				BED2DF13217BC5BF00C510DD /* Reach.swift in Sources */,
 				BE65F311217609C90011178C /* ViewController.swift in Sources */,
+				BE21F5AE21D0BC160070A223 /* Country.swift in Sources */,
 				BED2DF21217BC5DC00C510DD /* AppUtils.swift in Sources */,
 				BED2DF39217BE22800C510DD /* FriendsTextField.swift in Sources */,
 				BED2DF14217BC5BF00C510DD /* ApiHelper.swift in Sources */,
+				BE21F5B321D0D0820070A223 /* RegisterModel.swift in Sources */,
 				BED2DF37217BE0E900C510DD /* FriendsButton.swift in Sources */,
 				BE65F33E21760A800011178C /* AudioRecorderViewController.swift in Sources */,
 				BED2DF22217BC5DC00C510DD /* MainTableViewController.swift in Sources */,
@@ -383,11 +439,15 @@
 				BED2DF24217BC5DC00C510DD /* ViewControllersUtils.swift in Sources */,
 				BED2DF27217BC5E500C510DD /* CardView.swift in Sources */,
 				BED2DF3C217BE67E00C510DD /* RegisterationViewController.swift in Sources */,
+				BE21F5B521D0D08E0070A223 /* BaseModel.swift in Sources */,
 				BED2DF34217BD8A300C510DD /* FriendsLabel.swift in Sources */,
 				BED2DF20217BC5DC00C510DD /* DilogeCreator.swift in Sources */,
 				BED2DCCE217BC22800C510DD /* Constans.swift in Sources */,
+				BE21F5AC21D0B9020070A223 /* RegisterationPresenter.swift in Sources */,
 				BED2DCCB217BBD0C00C510DD /* LanguageHandler.swift in Sources */,
+				BE21F5A721D0B46F0070A223 /* MainPresenter.swift in Sources */,
 				BED2DF23217BC5DC00C510DD /* ViewUtils.swift in Sources */,
+				BE21F5B121D0BDA00070A223 /* RegisterServices.swift in Sources */,
 				BED2DF32217BD7AA00C510DD /* MainViewController.swift in Sources */,
 				BED2DF11217BC5BF00C510DD /* ApiLinks.swift in Sources */,
 				BE65F30F217609C90011178C /* AppDelegate.swift in Sources */,
@@ -555,6 +615,32 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BEMCheckBox\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"KeychainAccess\"",
+					"-framework",
+					"\"PKHUD\"",
+					"-framework",
+					"\"PickerView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SwiftGifOrigin\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"UIColor_Hex_Swift\"",
+					"-framework",
+					"\"XLPagerTabStrip\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FriendsChatting.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -574,6 +660,32 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BEMCheckBox\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"KeychainAccess\"",
+					"-framework",
+					"\"PKHUD\"",
+					"-framework",
+					"\"PickerView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SwiftGifOrigin\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"UIColor_Hex_Swift\"",
+					"-framework",
+					"\"XLPagerTabStrip\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FriendsChatting.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";

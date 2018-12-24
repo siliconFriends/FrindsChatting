@@ -5,3 +5,9 @@
 "phone" = "Phone";
 "code" = "Code";
 "login" = "Login";
+//Errors
+"phoneInUse" = "mobile number already used before";
+"Ops!" = "Ops! Something wnt wrong" ;
+"emptyField" = "%@ is Empty";
+"notValid" = "%@ is not valid";
+"checkInternet" = "Check Internet Connection" ;
