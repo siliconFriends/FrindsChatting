@@ -21,6 +21,8 @@
 		BE65F316217609CC0011178C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE65F315217609CC0011178C /* Assets.xcassets */; };
 		BE65F319217609CC0011178C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE65F317217609CC0011178C /* LaunchScreen.storyboard */; };
 		BE65F33E21760A800011178C /* AudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65F33D21760A800011178C /* AudioRecorderViewController.swift */; };
+		BEBEAC4321D0FE94005E5DB7 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEAC4221D0FE94005E5DB7 /* AppUser.swift */; };
+		BEBEAC4521D0FEFB005E5DB7 /* UserDefaultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEAC4421D0FEFB005E5DB7 /* UserDefaultHandler.swift */; };
 		BED2DCBB217BB70F00C510DD /* GE SS Two Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */; };
 		BED2DCBF217BB8CC00C510DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BED2DCC1217BB8CC00C510DD /* Localizable.strings */; };
 		BED2DCCB217BBD0C00C510DD /* LanguageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2DCCA217BBD0C00C510DD /* LanguageHandler.swift */; };
@@ -63,6 +65,8 @@
 		BE65F318217609CC0011178C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE65F31A217609CC0011178C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE65F33D21760A800011178C /* AudioRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderViewController.swift; sourceTree = "<group>"; };
+		BEBEAC4221D0FE94005E5DB7 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		BEBEAC4421D0FEFB005E5DB7 /* UserDefaultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHandler.swift; sourceTree = "<group>"; };
 		BED2DCBA217BB70F00C510DD /* GE SS Two Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GE SS Two Bold.otf"; sourceTree = "<group>"; };
 		BED2DCC9217BBCDF00C510DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BED2DCCA217BBD0C00C510DD /* LanguageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageHandler.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				BE21F5AD21D0BC160070A223 /* Country.swift */,
 				BE21F5B221D0D0820070A223 /* RegisterModel.swift */,
 				BE21F5B421D0D08E0070A223 /* BaseModel.swift */,
+				BEBEAC4221D0FE94005E5DB7 /* AppUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				BED2DCC1217BB8CC00C510DD /* Localizable.strings */,
 				BED2DCCA217BBD0C00C510DD /* LanguageHandler.swift */,
 				BED2DCCD217BC22800C510DD /* Constans.swift */,
+				BEBEAC4421D0FEFB005E5DB7 /* UserDefaultHandler.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -437,7 +443,9 @@
 				BED2DF25217BC5DC00C510DD /* BaseViewController.swift in Sources */,
 				BED2DF1F217BC5DC00C510DD /* Validator.swift in Sources */,
 				BED2DF24217BC5DC00C510DD /* ViewControllersUtils.swift in Sources */,
+				BEBEAC4521D0FEFB005E5DB7 /* UserDefaultHandler.swift in Sources */,
 				BED2DF27217BC5E500C510DD /* CardView.swift in Sources */,
+				BEBEAC4321D0FE94005E5DB7 /* AppUser.swift in Sources */,
 				BED2DF3C217BE67E00C510DD /* RegisterationViewController.swift in Sources */,
 				BE21F5B521D0D08E0070A223 /* BaseModel.swift in Sources */,
 				BED2DF34217BD8A300C510DD /* FriendsLabel.swift in Sources */,

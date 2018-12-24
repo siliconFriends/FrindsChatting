@@ -7,9 +7,10 @@
 //
 
 import Foundation
-class Constans {
-    static let LanguageSuite =  "LanguageSuite_Default"
-    static let CurrentLanguage =  "CurrentLanguage_Default"
-    static let CurrentDirection = " CurrentDirection_Default"
-    static let FirstRun =  "FirstRun_Default"
+enum Constans :String {
+    case LanguageSuite
+    case CurrentLanguage
+    case CurrentDirection
+    case FirstRun
+    case CurrentUser
 }

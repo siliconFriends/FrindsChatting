@@ -13,21 +13,21 @@ import FBSDKCoreKit
 class MainPresenter:BasePresenter {
     // Mark : FaceBook Login
     func FaceBookAuthLogin () {
-        let loginManager = FBSDKLoginManager()
-        loginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self.delegate) { (result, error) in
-            
-            if (error == nil){
-                let fbloginresult : FBSDKLoginManagerLoginResult = result!
-                // if user cancel the login
-                if (result?.isCancelled)!{
-                    return
-                }
-                if(fbloginresult.grantedPermissions.contains("email"))
-                {
-                    self.getFBUserData()
-                }
-            }
-        }
+//        let loginManager = FBSDKLoginManager()
+//        loginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self.delegate) { (result, error) in
+//            
+//            if (error == nil){
+//                let fbloginresult : FBSDKLoginManagerLoginResult = result!
+//                // if user cancel the login
+//                if (result?.isCancelled)!{
+//                    return
+//                }
+//                if(fbloginresult.grantedPermissions.contains("email"))
+//                {
+//                    self.getFBUserData()
+//                }
+//            }
+//        }
     }
     
     func getFBUserData(){

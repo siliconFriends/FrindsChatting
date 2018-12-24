@@ -22,8 +22,8 @@ class LanguageHandler :NSObject {
     var currentLanguage :LanguageType = .ARABIC {
         didSet {
             if oldValue != currentLanguage || currentBundle == nil {
-                let sharedDefaults = UserDefaults(suiteName: Constans.LanguageSuite)
-                sharedDefaults?.set(currentLanguage.rawValue, forKey: Constans.CurrentLanguage)
+                let sharedDefaults = UserDefaults(suiteName: Constans.LanguageSuite.rawValue)
+                sharedDefaults?.set(currentLanguage.rawValue, forKey: Constans.CurrentLanguage.rawValue)
                 sharedDefaults?.synchronize()
                 self.adjustBundle()
             }
@@ -31,8 +31,8 @@ class LanguageHandler :NSObject {
     }
     var currentDirection : DirectionType?{
         didSet{
-            let sharedDefaults = UserDefaults(suiteName: Constans.LanguageSuite)
-            sharedDefaults?.set(currentDirection?.rawValue, forKey: Constans.CurrentDirection)
+            let sharedDefaults = UserDefaults(suiteName: Constans.LanguageSuite.rawValue)
+            sharedDefaults?.set(currentDirection?.rawValue, forKey: Constans.CurrentDirection.rawValue)
             sharedDefaults?.synchronize()
         }
     }
@@ -73,12 +73,12 @@ class LanguageHandler :NSObject {
     }
     override init() {
         super.init()
-        let sharedDefaults = UserDefaults(suiteName: Constans.LanguageSuite)
-        let language = sharedDefaults?.object(forKey: Constans.CurrentLanguage)
+        let sharedDefaults = UserDefaults(suiteName: Constans.LanguageSuite.rawValue)
+        let language = sharedDefaults?.object(forKey: Constans.CurrentLanguage.rawValue)
         if language == nil {
             self.setDefaultAppSettings()
         }else{
-            let direction = sharedDefaults?.object(forKey: Constans.CurrentDirection)
+            let direction = sharedDefaults?.object(forKey: Constans.CurrentDirection.rawValue)
             self.setDirection(direction: DirectionType(rawValue: direction as! Int)!, lang: LanguageType(rawValue: language as! Int)!)
         }
     }

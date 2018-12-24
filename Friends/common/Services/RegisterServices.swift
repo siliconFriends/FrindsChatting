@@ -52,6 +52,7 @@ class RegisterServices {
         RequestBuilder.request(method:.post,url: ApiLinks.userLink + "register", parmters: ["country": country,"mobile": mobileNumber, "username": userName,"birthdate": birthDate,"gender": gender, "password":password]){ (response, error) in
             if error == "" {
                 if let registerModel = Mapper<RegisterModel>().map(JSONObject: response) {
+                    UserDefaultHandler.save(registerModel.accessToken!, key: .CurrentUser)
                     completion(registerModel.user!)
                 }
             }
