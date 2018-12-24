@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import PKHUD
+import KVNProgress
 class BaseViewController: UIViewController {
     let NO_ERROR = "1" ;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        PKHUD.sharedHUD.contentView = PKHUDProgressView()
         self.navigationController?.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "back_icon")
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back_icon")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
@@ -23,20 +22,21 @@ class BaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     func showProgress(){
-        HUD.show(.progress)
+        KVNProgress.show()
     }
     func hideProgress(){
-        HUD.hide()
+        KVNProgress.dismiss()
     }
     func showError(errorMessage: String) {
-        //DialogeCreator.alertWithTittlMessage(title: "خطأ", message: errorMessage, viewController: self)
+        DialogeCreator.alertWithOneCancelAction(title: "Error!".localize, message: errorMessage, viewController: self)
     }
     func showSuccess(message: String) {
-        //DialogeCreator.alertWithTittlMessage(title: "تم", message: message, viewController: self)
+      DialogeCreator.alertWithOneCancelAction(title: "", message: message, viewController: self)
+        
     }
     func checkEmpty(text :String?) ->Bool {
         if text != nil {
-            return text  != ""
+            return text  == ""
         }
         return false 
     }

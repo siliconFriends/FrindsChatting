@@ -218,7 +218,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مصر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2B-kN-gAW" customClass="FriendsLabel" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="30" y="22.333333333333314" width="26.666666666666671" height="17.666666666666671"/>
+                                                                <rect key="frame" x="30" y="23" width="30" height="16"/>
                                                                 <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -234,7 +234,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="country" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyr-Og-PPl" customClass="FriendsTextField" customModule="Friends" customModuleProvider="target">
-                                                                <rect key="frame" x="66.666666666666671" y="8.6666666666666856" width="247.33333333333331" height="45"/>
+                                                                <rect key="frame" x="30" y="8.6666666666666856" width="284" height="45"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="FaM-6b-Rp8"/>
@@ -250,14 +250,13 @@
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="cW3-Dv-QfE" firstAttribute="leading" secondItem="UZy-Bm-bDW" secondAttribute="leading" id="0Bu-Be-JnJ"/>
+                                                            <constraint firstItem="fyr-Og-PPl" firstAttribute="leading" secondItem="YrZ-yR-hsE" secondAttribute="trailing" constant="10" id="3lQ-ma-DQB"/>
                                                             <constraint firstAttribute="bottom" secondItem="cW3-Dv-QfE" secondAttribute="bottom" id="4Qk-eL-Dd7"/>
                                                             <constraint firstItem="q2B-kN-gAW" firstAttribute="centerY" secondItem="KVu-kq-bo5" secondAttribute="centerY" id="9Pq-zH-LsZ"/>
                                                             <constraint firstAttribute="trailing" secondItem="KVu-kq-bo5" secondAttribute="trailing" constant="10" id="DTn-yU-NOF"/>
-                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q2B-kN-gAW" secondAttribute="trailing" constant="20" symbolic="YES" id="Dx2-kh-0dc"/>
                                                             <constraint firstItem="KVu-kq-bo5" firstAttribute="leading" secondItem="fyr-Og-PPl" secondAttribute="trailing" constant="10" id="J8p-R1-3OC"/>
                                                             <constraint firstItem="YrZ-yR-hsE" firstAttribute="leading" secondItem="UZy-Bm-bDW" secondAttribute="leading" constant="8" id="Unx-1x-1ao"/>
                                                             <constraint firstItem="cW3-Dv-QfE" firstAttribute="top" secondItem="KVu-kq-bo5" secondAttribute="bottom" constant="10" id="XG1-FY-LZe"/>
-                                                            <constraint firstItem="fyr-Og-PPl" firstAttribute="leading" secondItem="q2B-kN-gAW" secondAttribute="trailing" constant="10" id="bG9-i7-8Rp"/>
                                                             <constraint firstItem="q2B-kN-gAW" firstAttribute="leading" secondItem="YrZ-yR-hsE" secondAttribute="trailing" constant="10" id="dId-0Y-5iU"/>
                                                             <constraint firstItem="fyr-Og-PPl" firstAttribute="centerY" secondItem="KVu-kq-bo5" secondAttribute="centerY" id="fRr-IH-oBo"/>
                                                             <constraint firstItem="KVu-kq-bo5" firstAttribute="centerY" secondItem="UZy-Bm-bDW" secondAttribute="centerY" id="i26-03-1pa"/>
@@ -433,7 +432,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="txt" value="login"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="loginAction:" destination="wKV-lZ-xee" eventType="touchUpInside" id="lLE-aH-udS"/>
+                                                    <action selector="registerAction:" destination="wKV-lZ-xee" eventType="touchUpInside" id="dC5-3C-9aF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -476,6 +475,7 @@
                         <viewLayoutGuide key="safeArea" id="zac-JH-sK4"/>
                     </view>
                     <connections>
+                        <outlet property="CountryLabel" destination="q2B-kN-gAW" id="f5J-Wy-H6z"/>
                         <outlet property="codeImage" destination="Rxf-ZM-log" id="cnW-OF-2Yc"/>
                         <outlet property="codeTextField" destination="UWj-5U-dEd" id="nqW-VW-CuX"/>
                         <outlet property="countryTextField" destination="fyr-Og-PPl" id="olk-S9-fRY"/>
@@ -490,7 +490,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFg-mc-v2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.60000000000002" y="120.98950524737631"/>
+            <point key="canvasLocation" x="892.75362318840587" y="120.65217391304348"/>
         </scene>
     </scenes>
     <resources>

@@ -10,3 +10,7 @@
 "Ops!" = "خطآ غير معروف" ;
 "emptyField" = "%@ فارغ";
 "notValid" = "%@ غير صالح";
+"Error!" = "خطآ" ;
+
+//messages
+"Done" = "إلغاء";

@@ -11,3 +11,8 @@
 "emptyField" = "%@ is Empty";
 "notValid" = "%@ is not valid";
 "checkInternet" = "Check Internet Connection" ;
+"Error!" = "Error";
+
+//messages
+"Done" = "Done";
+

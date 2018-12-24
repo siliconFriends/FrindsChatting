@@ -6,16 +6,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Friends/common/Services/RegisterServices.swift"
+            timestampString = "567375025.503389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getMobileInUse(mobileNumber:completion:errorResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Friends/presentation/main/mainViewController/MainPresenter.swift"
-            timestampString = "567353227.664945"
+            filePath = "Friends/common/Network/RequestBuilder.swift"
+            timestampString = "567375025.504161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "FaceBookAuthLogin()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "request(method:url:parmters:completion:arrayCompeletion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

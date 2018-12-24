@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+typealias DialogeCallback = () -> Void
 class DialogeCreator {
     /*
      -------------------
@@ -55,41 +56,34 @@ class DialogeCreator {
 //     one action alert message
 //     -------------------
 //     */
-//    static func alertWithTwoActions(title: String! , message: String ,viewController : UIViewController,actionTitle :String ,action :@escaping ()->Void, action2Title :String ,action2 :@escaping ()->Void){
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let action = UIAlertAction(title: actionTitle, style: UIAlertActionStyle.default,handler: {_ in
-//            action()
-//            alert.dismiss(animated: true, completion: nil)
-//        });
-//        let action2 = UIAlertAction(title: action2Title, style: UIAlertActionStyle.default,handler: {_ in
-//            action2()
-//            alert.dismiss(animated: true, completion: nil)
-//        });
-//        alert.addAction(action2)
-//        alert.addAction(action)
-//
-//        viewController.present(alert, animated: true, completion:nil)
-//        
-//    }
+    static func alertWithTwoActions(title: String! , message: String ,viewController : UIViewController,actionTitle :String ,action :@escaping ()->Void, action2Title :String ,action2 :@escaping ()->Void){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: actionTitle, style: UIAlertActionStyle.default,handler: {_ in
+            action()
+            alert.dismiss(animated: true, completion: nil)
+        });
+        let action2 = UIAlertAction(title: action2Title, style: UIAlertActionStyle.default,handler: {_ in
+            action2()
+            alert.dismiss(animated: true, completion: nil)
+        });
+        alert.addAction(action2)
+        alert.addAction(action)
+
+        viewController.present(alert, animated: true, completion:nil)
+        
+    }
 //    /*
 //     -------------------
 //     one and cancelaction alert message
 //     -------------------
 //     */
-//    static func alertWithOneCancelAction(title: String! , message: String ,viewController : UIViewController,actionTitle :String ,action :@escaping ()->Void ){
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let cancel = UIAlertAction(title: "الغاء", style: UIAlertActionStyle.cancel,handler: nil);
-//
-//        let action = UIAlertAction(title: actionTitle, style: UIAlertActionStyle.default,handler: {_ in
-//            action()
-//            alert.dismiss(animated: true, completion: nil)
-//        });
-//        alert.addAction(cancel)
-//
-//        alert.addAction(action)
-//        viewController.present(alert, animated: true, completion:nil)
-//        
-//    }
+    static func alertWithOneCancelAction(title: String! , message: String ,viewController : UIViewController){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Done".localize, style: UIAlertActionStyle.cancel,handler: nil);
+        alert.addAction(cancel)
+        viewController.present(alert, animated: true, completion:nil)
+        
+    }
        /*
      -------------------
      choose image dialoge

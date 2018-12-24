@@ -20,10 +20,15 @@ class RegisterationViewController: BaseViewController {
     @IBOutlet weak var passTextField: FriendsTextField!
     @IBOutlet weak var codeTextField: FriendsTextField!
     @IBOutlet weak var loginButton: FriendsButton!
+    @IBOutlet weak var CountryLabel: FriendsLabel!
     let countryPicker = UIPickerView()
     var presenter = RegisterationPresenter(registerSerives: RegisterServices())
     var countries = [Country]()
-    var selectedCountry :Country?
+    var selectedCountry :Country? {
+        didSet{
+            CountryLabel.txt = ((LanguageHandler.sharedInstance.currentLanguage == .ARABIC) ? selectedCountry?.countryArName :selectedCountry?.countryEnName) ?? ""
+        }
+    }
     var selectedMobileNumber  = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +54,7 @@ class RegisterationViewController: BaseViewController {
         countryTextField.inputView = countryPicker
         countryPicker.delegate = self
         countryPicker.dataSource = self
+        countryPicker.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     // Mark : Actions
     @IBAction func registerAction(_ sender: Any) {
@@ -56,7 +62,7 @@ class RegisterationViewController: BaseViewController {
             self.showError(errorMessage: String(format: "emptyField".localize, "phone".localize))
             return
         }
-        if checkEmpty(text: countryTextField.text){
+        if checkEmpty(text: CountryLabel.text){
             self.showError(errorMessage: String(format: "emptyField".localize, "country".localize))
             return
         }
@@ -80,7 +86,7 @@ class RegisterationViewController: BaseViewController {
             return
         }
         if Validator.validateNumber(value: phoneTextField.text!) {
-            presenter.checkPhoneinUse(phone:  phoneTextField.text!)
+            presenter.checkPhoneinUse(phone: "\(selectedCountry?.phoneCode ?? "")\(phoneTextField.text!)")
         }else{
             self.showError(errorMessage: String(format: "notValid".localize, "phone".localize))
         }

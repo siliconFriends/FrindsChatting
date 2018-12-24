@@ -7,26 +7,25 @@
 //
 
 import UIKit
-import PKHUD
 
 class MainTableViewController: UITableViewController {
 
     let NO_ERROR = "1" ;
     override func viewDidLoad() {
         super.viewDidLoad()
-        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+      //  PKHUD.sharedHUD.contentView = PKHUDProgressView()
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    func showProgress(){
-        HUD.show(.progress)
-    }
-    func hideProgress(){
-        HUD.hide()
-    }
+//    func showProgress(){
+//        HUD.show(.progress)
+//    }
+//    func hideProgress(){
+//        HUD.hide()
+//    }
 //    func error(errorMessage: String) {
 //        
 //        // DialogeCreator.alertWithTittlMessage(title: "خطأ", message: errorMessage, viewController: self)
