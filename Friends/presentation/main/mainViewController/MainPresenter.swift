@@ -8,8 +8,9 @@
 
 import Foundation
 import  ObjectMapper
+import FacebookLogin
 import FBSDKLoginKit
-import FBSDKCoreKit
+import FacebookCore
 
 class MainPresenter:BasePresenter {
     fileprivate let registerService:RegisterServices
@@ -27,21 +28,25 @@ class MainPresenter:BasePresenter {
     
     // Mark : FaceBook Login
     func FaceBookAuthLogin () {
-        let loginManager = FBSDKLoginManager()
-        loginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self.socialView as? UIViewController) { (result, error) in
-
-            if (error == nil){
-                let fbloginresult : FBSDKLoginManagerLoginResult = result!
-                // if user cancel the login
-                if (result?.isCancelled)!{
-                    return
+        let loginManager = LoginManager()
+        loginManager.logIn(readPermissions:[.publicProfile, .email ], viewController: nil) { (result) in
+            switch result{
+            case .cancelled:
+                print("Cancel button click")
+            case .success:
+                let params = ["fields" : "id, name, first_name, last_name, picture.type(large), email "]
+                let graphRequest = FBSDKGraphRequest.init(graphPath: "/me", parameters: params)
+                let Connection = FBSDKGraphRequestConnection()
+                Connection.add(graphRequest) { (Connection, result, error) in
+                    let info = result as! [String : AnyObject]
+                    print(info["name"] as! String)
                 }
-                if(fbloginresult.grantedPermissions.contains("email"))
-                {
-                    self.getFBUserData()
-                }
+                Connection.start()
+            default:
+                print("??")
             }
         }
+        
     }
     
     func getFBUserData(){

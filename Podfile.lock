@@ -7,9 +7,17 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - FBSDKCoreKit (4.39.0):
+  - FacebookCore (0.5.0):
     - Bolts (~> 1.9)
-  - FBSDKLoginKit (4.39.0):
+    - FBSDKCoreKit (~> 4.37)
+  - FacebookLogin (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKLoginKit (~> 4.37)
+  - FBSDKCoreKit (4.38.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.38.1):
     - FBSDKCoreKit
   - IQKeyboardManagerSwift (6.2.0)
   - KeychainAccess (3.1.2)
@@ -27,7 +35,10 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - BEMCheckBox
-  - FBSDKLoginKit
+  - FacebookCore
+  - FacebookLogin
+  - FBSDKCoreKit (~> 4.38.0)
+  - FBSDKLoginKit (~> 4.38.0)
   - IQKeyboardManagerSwift
   - KeychainAccess
   - ObjectMapper (~> 3.4)
@@ -44,6 +55,8 @@ SPEC REPOS:
     - Alamofire
     - BEMCheckBox
     - Bolts
+    - FacebookCore
+    - FacebookLogin
     - FBSDKCoreKit
     - FBSDKLoginKit
     - IQKeyboardManagerSwift
@@ -61,8 +74,10 @@ SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
-  FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
+  FacebookCore: 74288d0add931d361b1596beae787ab72c438249
+  FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
+  FBSDKCoreKit: 8d47857400e2f5bdea697a80daff882e91c84ef6
+  FBSDKLoginKit: 4621c690d9dd8628031a4791497062183ea34b0d
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
@@ -74,6 +89,6 @@ SPEC CHECKSUMS:
   UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
   XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: bdf172caeb96aed03679a8c50e1cca5666823d8d
+PODFILE CHECKSUM: e03364a96c876a5467d89ad4f3f33967f2eab2c1
 
 COCOAPODS: 1.5.3

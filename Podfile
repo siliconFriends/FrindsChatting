@@ -17,7 +17,9 @@ target 'Friends' do
   pod 'XLPagerTabStrip'
   pod 'BEMCheckBox'
   pod 'SDWebImage', '~> 4.0'
-  pod 'FBSDKLoginKit'
   pod 'ObjectMapper', '~> 3.4'
-
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FBSDKCoreKit', '~> 4.38.0'
+  pod 'FBSDKLoginKit', '~> 4.38.0'                            
 end
