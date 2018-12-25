@@ -37,9 +37,11 @@ class MainPresenter:BasePresenter {
                 let params = ["fields" : "id, name, first_name, last_name, picture.type(large), email "]
                 let graphRequest = FBSDKGraphRequest.init(graphPath: "/me", parameters: params)
                 let Connection = FBSDKGraphRequestConnection()
+                self.socialView?.startLoading()
                 Connection.add(graphRequest) { (Connection, result, error) in
                     let info = result as! [String : AnyObject]
                     print(info["name"] as! String)
+                    self.socialView?.finishLoading()
                 }
                 Connection.start()
             default:

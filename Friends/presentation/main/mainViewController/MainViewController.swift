@@ -21,6 +21,7 @@ class MainViewController: BaseViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        presenter.attachView(self)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     override func viewWillDisappear(_ animated: Bool) {
